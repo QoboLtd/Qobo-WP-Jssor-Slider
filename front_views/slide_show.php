@@ -138,7 +138,7 @@
 		});
 	</script>
 
-	<div id="slider_container_<?php echo $slider_id; ?>" style="position: relative; width:<?php echo $sliderW; ?>px; height:<?php echo $sliderH; ?>px;">
+	<div id="slider_container_<?php echo $slider_id; ?>" style="position: relative; width:<?php echo $sliderW; ?>px; height:<?php echo $sliderH; ?>px;" class="jssor-slider">
 		<!-- Slides Container -->
 		<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width:<?php echo $sliderW; ?>px; height:<?php echo $sliderH; ?>px; overflow: hidden;">
 			<!-- Slide -->
