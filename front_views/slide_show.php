@@ -147,8 +147,7 @@
 				<img u="image" src="<?php echo stripcslashes(JSSOR_SL_THUMB_URL . $slides[$flag]->thumbnail_url); ?>" />
 				<?php 	if ( $slides[$flag]->title ) : ?>
 				<div u="caption" t="<?php echo $result2[$slides[$flag]->caption_in]; ?>" t2="<?php echo $result2[$slides[$flag]->caption_out]; ?>" style="position: absolute; top: 20px; left: 20px; height: 30px; color: #ffffff; font-size: 20px; line-height: 30px;"><?php echo html_entity_decode( stripcslashes( htmlspecialchars( $slides[$flag]->title ) ) ); ?></div>
-				<div u="caption" t="<?php echo $result2[$slides[$flag]->caption_in]; ?>" t2="<?php echo $result2[$slides[$flag]->caption_out]; ?>" style="position: absolute; top: 20px; left: 20px; height: 30px; color: #ffffff; font-size: 20px; line-height: 30px;"><?php echo html_entity_decode( stripcslashes( htmlspecialchars( $slides[$flag]->title ) ) ); ?></div>
-				<?php endif;
+				<?php endif;  
 					if ( $slides[$flag]->description ) :
 				?>
 				<div u="caption" t="<?php echo $result2[$slides[$flag]->description_in]; ?>" t2="<?php echo $result2[$slides[$flag]->description_out]; ?>" style="position: absolute; top: <?php echo $descH; ?>px; left: 0px;width: 800px; height: 50px;">
