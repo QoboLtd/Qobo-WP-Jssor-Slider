@@ -30,16 +30,13 @@
 	if ( !defined( 'JSSOR_SL_PLUGIN_FILENAME' ) ) define( 'JSSOR_SL_PLUGIN_FILENAME', basename(__FILE__) );
 	if ( !defined( 'JSSOR_SL_PLUGIN_DIRNAME' ) ) define( 'JSSOR_SL_PLUGIN_DIRNAME', plugin_basename( dirname(__FILE__) ) );
 	if ( !defined( 'JSSOR_SL_PLUGIN_DIR' ) ) define( 'JSSOR_SL_PLUGIN_DIR', JSSOR_PLUGIN_DIR . '/' . JSSOR_SL_PLUGIN_DIRNAME );
-	if ( !defined( 'JSSOR_SL_PLUGIN_URL' ) ) define( 'JSSOR_SL_PLUGIN_URL', site_url() . '/wp-content/plugins/' . JSSOR_SL_PLUGIN_DIRNAME );
+	if ( !defined( 'JSSOR_SL_PLUGIN_URL' ) ) define( 'JSSOR_SL_PLUGIN_URL', home_url().  plugin_dir_url( __FILE__ ) );
 	if ( !defined( 'JSSOR_SLIDER_PATH' ) )  define( 'JSSOR_SLIDER_PATH', plugin_dir_path( __FILE__ ) );
 	
 	if ( !defined( 'JSSOR_SL_THUMB_URL' ) ) define( 'JSSOR_SL_THUMB_URL', site_url() . '/wp-content/jssor-slider/jssor-uploads/' );
 	if ( !defined( 'JSSOR_SL_THUMB_SMALL_URL') ) define( 'JSSOR_SL_THUMB_SMALL_URL', site_url() . '/wp-content/jssor-slider/thumbs/' );
 	if ( !defined( 'jssor_slider' ) ) define( 'jssor_slider', 'jssor_slider' );
 
-
-	
-	
 	require_once ( JSSOR_SLIDER_PATH . '/lib/jssor-slider-class.php' );
 
 	add_action( 'plugins_loaded', array( 'JssorSliderPlugin', 'run' ) );
