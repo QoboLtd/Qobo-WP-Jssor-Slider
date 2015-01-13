@@ -1,5 +1,4 @@
 <?php
-	
 	$result = array_flip( $Caption_Transition );
 	$slides = $wpdb->get_results
 				(
@@ -66,7 +65,6 @@
 	$decriptionOut_trans = JssorSliderHelper::getcaption_trans( $slides, $result, $string_id = 'description_out' );
 	
 	$caption_trans = $captionIn_trans.$captionOut_trans.$decriptionIn_trans.$decriptionOut_trans;
-	
 	$result2 = JssorSliderHelper::format_R( $result );
 
 ?>	
@@ -138,7 +136,7 @@
 		});
 	</script>
 
-	<div id="slider_container_<?php echo $slider_id; ?>" style="margin:10px auto;position: relative; width:<?php echo $sliderW; ?>px; height:<?php echo $sliderH; ?>px;">
+	<div id="slider_container_<?php echo $slider_id; ?>" style="position: relative; width:<?php echo $sliderW; ?>px; height:<?php echo $sliderH; ?>px;" class="jssor-slider">
 		<!-- Slides Container -->
 		<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width:<?php echo $sliderW; ?>px; height:<?php echo $sliderH; ?>px; overflow: hidden;">
 			<!-- Slide -->
