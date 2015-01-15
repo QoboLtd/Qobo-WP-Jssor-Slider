@@ -4,7 +4,7 @@
  * Plugin Name: Jssor Slider
  * Plugin URI:	http://www.phpcentre.net
  * Description: Easy to use slideshow plugin.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: PhP Centre
  * Author URI: phpcentre.net
  * License: GPL-2.0+
